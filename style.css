@@ -515,3 +515,48 @@ footer p {
     height: 30px;
   }
 }
+.card-container{
+  width: 85%;
+  margin: auto ;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px ;
+  padding-top: 2%;
+}
+.card{
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  /* padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease; */
+}
+.card img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.card-content {
+  padding: 20px;
+}
+.card-content h2{
+  color: #0078c2;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.card-content p{
+  color: #222;
+  line-height: 1.5;
+  text-align: justify;
+}
+@media screen and (max-width: 800px) {
+  .card-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-container{
+    grid-template-columns: 1fr;
+  }
+}
