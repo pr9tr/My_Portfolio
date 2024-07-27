@@ -18,7 +18,7 @@ function triggerDownload() {
       loadingBar.style.display = 'none';
       btn.innerHTML = 'Downloaded!';
       btn.classList.add("toButton");
-      window.open('./assets/resume-example.pdf');
+      window.open('./assets/CV-Pranav-Raj.pdf');
     }, 1000)
   }, 300);
 }
